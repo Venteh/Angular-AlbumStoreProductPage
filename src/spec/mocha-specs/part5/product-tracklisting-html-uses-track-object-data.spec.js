@@ -68,8 +68,8 @@ describe("ProductTracklisting", () => {
     assert(
       li
         .attr()
-        ["*ngfor"].match(/\s*let\s*track\s*of\s*albumInfo\?.album.tracks/),
-      "The `ngFor` directive doesn't have `let track of albumInfo?.album.tracks` as its value."
+        ["*ngfor"].match(/\s*let\s*track\s*of\s*albumInfo\?.tracks/),
+      "The `ngFor` directive doesn't have `let track of albumInfo?.tracks` as its value."
     );
 
     assert(

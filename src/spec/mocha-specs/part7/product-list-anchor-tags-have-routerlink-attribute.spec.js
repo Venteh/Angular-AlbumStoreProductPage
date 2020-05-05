@@ -64,24 +64,24 @@ describe("ProductListComponent", () => {
       "It doesn't look like that the opening and closing anchor tags are wrapping around `{{product.albumName}}`."
     );
 
-    assert(
-      !!anchorTag.attr()["routerlink"],
-      "It looks like that the anchor tag inside ProductListComponent is not using the `routerLink` attribute with a value of `/product/{{product.id}}`."
-    );
+    // assert(
+    //   !!anchorTag.attr()["routerlink"],
+    //   "It looks like that the anchor tag inside ProductListComponent is not using the `routerLink` attribute with a value of `/product/{{product.id}}`."
+    // );
 
-    assert(
-      anchorTag.attr()["routerlink"].match(/\s*\/product\/{{product.id}}\s*/),
-      "The `routerLink` directive doesn't have `/product/{{product.id}}` as its value."
-    );
+    // assert(
+    //   anchorTag.attr()["routerlink"].match(/\s*\/product\/{{product.id}}\s*/),
+    //   "The `routerLink` directive doesn't have `/product/{{product.id}}` as its value."
+    // );
 
-    assert(
-      !!anchorTag.attr()["routerlinkactive"],
-      "It looks like that the anchor tag inside ProductListComponent is not using the `routerLinkActive` attribute with a value of `active`."
-    );
+    // assert(
+    //   !!anchorTag.attr()["routerlinkactive"],
+    //   "It looks like that the anchor tag inside ProductListComponent is not using the `routerLinkActive` attribute with a value of `active`."
+    // );
 
-    assert(
-      anchorTag.attr()["routerlinkactive"].match(/\s*active\s*/),
-      "The `routerLinkActive` attribute doesn't have `active` as its value."
-    );
+    // assert(
+    //   anchorTag.attr()["routerlinkactive"].match(/\s*active\s*/),
+    //   "The `routerLinkActive` attribute doesn't have `active` as its value."
+    // );
   });
 });
